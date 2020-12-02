@@ -24,7 +24,7 @@ function App() {
 
   const dateBuilder = (d) => {
 
-    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "DEcember"]
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
     let day = days[d.getDay()];
@@ -37,6 +37,9 @@ function App() {
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app' : 'app night') : 'app'}>
       <main>
+        <div className="weather-tagline">
+          <h1>Find the Weather of your City</h1>
+        </div>
         <div className="search-box">
           <input type="text" className="search-bar" placeholder="search" onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search} />
         </div>

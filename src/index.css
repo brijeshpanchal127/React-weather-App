@@ -92,3 +92,12 @@ main{
   font-weight: 700;
   text-shadow: 3px 3px rgba(50,50,70,0.5);
 }
+
+.weather-tagline{
+  color:#fff;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  padding-bottom: 20px;
+
+}
